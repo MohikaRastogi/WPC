@@ -1,0 +1,26 @@
+The Well in the Jungle
+Send Feedback
+We know about an amazing jungle. The inhabitants of the jungle are either blue coloured or red coloured animals.
+The jungle is represented by 2D grid, one animal lives in each cell (except for cell containing obstacles). The only well in jungle is located in (0, 0).
+Animals make steps in one of the four directions (up, down, left, right), moving to one of the four neighbouring cells in one step. They can't enter cells with obstacles. There is a conference at the well. The conference will be attended by all animals that can reach well in S steps or less. Each animal coming to the conference will take the shortest route to headquarters (or any such route, if there is more than one).
+It has been observed that animals change their colour with each step. We want you to figure out how many animals arrive at well blue-coloured and red-coloured, respectively.
+Nore: Initially, all animals are blue-coloured.
+Input Format:
+The first line of input contains two integers O and S (0 ≤ B ≤ 10 000, 1 ≤ S ≤ 10 000 000), the number of obstacles in the 2D grid of jungle and the maximum number of steps allowed from the task description.
+Each of the following O lines contains two integers, the coordinates of one obstacle. The absolute value of both coordinates will be less than 1000. No two obstacles will be in the same cell and there will be no obstacle in cell (0, 0).  
+Constraints:
+Time Limit: 1 second
+Output Format:
+The first and only line of output contains two space separated integers, that denote the value of number of animals that arrive with blue colour and those with red colour, respectively.
+Sample Input 1:
+0 2
+Sample Output 1:
+9 4
+Sample Input 2:
+4 5
+-1 1
+0 -1
+0 1
+1 0 
+Sample Output 2:
+10 16
