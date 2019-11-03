@@ -1,0 +1,17 @@
+Avoid Landmines
+Send Feedback
+Rohan was given a map of an area which is a matrix of N rows and M columns. Each cell of this area is called field. Some fields are suitable for habitat, some are not because they are filled with landmines. Rohan is looking for rectangular parts that are completely filled with fields suitable for habitats. These rectangular parts are called safe rectangles.
+We will give you the map. You have to find the safety index of each field and print the safety index of the area. Safety index of the complete area is sum total of safety index of each habitable fields. For each habitable field, the safety index is number of safe rectangles that contain that field.
+Input format:
+The first line of input contains two positive integers, N and M (1 <= N, M <= 2000). The following N lines contain M characters each. The characters can be either '.' or '#', '.' represents habitable field and '#' represents field of landmines.
+Constraints:
+Time Limit: 2 seconds
+Output format:
+The first and only line of output contains safety index of the area.     
+Sample Input 1:
+3 4
+. . # .
+# . . . 
+. . . #
+Sample Output 1:
+40
