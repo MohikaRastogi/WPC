@@ -1,0 +1,35 @@
+Hackerman and his chessboard
+Send Feedback
+Hackerman has become a hardcore patriot, so he has asked you to draw him a Croatian chessboard (checkerboard).
+The chessboard consists of red and white cells. The upper left cell is red, with the remaining cells alternating between white and red in rows as well as columns. We will represent red areas with ‘X’ (uppercase letter x) characters, and white areas with ‘.’ (period) characters.
+Hackerman's chessboard should consist of R × C cells, that is, R rows and C columns. Each row should be A characters high, and each column B characters wide. Consider the sample tests below for further clarification
+Input Format:
+The first line of input contains two positive integers R and C from the problem statement.
+The second line of input contains two positive integers A and B from the problem statement.
+Constraints:
+1 ≤ R, C ≤ 10
+1 ≤ A, B ≤ 10
+Output Format:
+The output must consist of a total of R * A rows and C * B columns, forming the chessboard described above.
+Sample Input 1:
+2 4
+2 2
+Sample Output 1:
+XX..XX..
+XX..XX..
+..XX..XX
+..XX..XX
+Sample input 2:
+5 5
+2 3
+Sample Output 2:
+XXX...XXX...XXX
+XXX...XXX...XXX
+...XXX...XXX...
+...XXX...XXX...
+XXX...XXX...XXX
+XXX...XXX...XXX
+...XXX...XXX...
+...XXX...XXX...
+XXX...XXX...XXX
+XXX...XXX...XXX
