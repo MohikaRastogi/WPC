@@ -1,0 +1,28 @@
+Jessa and her array
+Send Feedback
+Walter is out of town, and Jessa is alone at the office. She was bored, so she took a piece of paper and wrote down a sequence A of length N, which contains each positive integer between 1 and N, inclusive, exactly once. After that, she took another piece of paper and wrote down M descriptions of the sequence A.
+Each description has one of the following formats:
+If the maximum number in positions between x and y (inclusive) equals v, then it would be written in following format:1 x y v
+If the smallest or minimum number in positions between x and y (inclusive) equals v, then it would be written in following format: 2 x y v.
+Then Walter came, saw, and stole the first paper. Jessa is desperate and has asked you to find some sequence matching the descriptions, not necessarily equal to the original sequence.
+Note:If multiple solution exist, you can print any.
+Input Format:
+The first line of input contains two positive integers N, the length of the sequence, and M, the number of descriptions. 
+Each of the following M lines contains a description as described above.
+Constraints:
+1 ≤ N ≤ 200
+0 ≤ M ≤ 40000
+Output Format:
+The first and only line of output must contain a sequence of N space-separated positive integers (matching the descriptions and containing all positive integers from 1 to N), or -1 if no such sequence exists. 
+Sample Input1:
+3 2
+1 1 1 1
+2 2 2 2
+Sample Output1:
+1 2 3
+Sample Input2:
+4 2
+1 1 1 1
+2 3 4 1
+Sample Output2:
+-1
