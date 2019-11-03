@@ -1,0 +1,22 @@
+Can it be reconstructed?
+Send Feedback
+Coding Ninjas has given you N * N matrix. We have blocked some fields in the square and some fields are blank. We viewed the square from top, left, right and down. First, we viewed it from left and for each of N rows, we wrote a number. This number denotes the number of blank fields in the row before first blocked field. We would write -1, if the first block is blocked in the row. This process was repeated for each side. Hence, we had gathered 4*N numbers.
+Parikh, the miscreant came and destroyed the square. We are only left with 4*N numbers. You have to tell us that if it is possible to reconstruct the square?
+Input Format:
+The first line of input contains a positive integer, that denotes the value of N (1 <= N <= 100000). 
+The following line contains N integers formed by viewing square from left side, L[i], (-1 <= L[i] <= N). 
+The following line contains N integers formed by viewing square from right side, R[i], (-1 <= R[i] <= N). 
+The following line contains N integers formed by viewing square from top side, T[i], (-1 <= T[i] <= N). 
+The following line contains N integers formed by viewing square from bottom side, B[i], (-1 <= B[i] <= N). 
+Constraints:
+Time Limit: 1 second
+Output format:
+ Print true if it possible to reconstruct the square and false otherwise.  
+Sample Input 1:
+3
+-1 2 0
+-1 0 1
+2 2 1
+0 0 1
+Sample Output 1:
+true
