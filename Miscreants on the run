@@ -1,0 +1,46 @@
+Miscreants on the run
+Send Feedback
+The college authorities is fed up of a few miscreants. They are running away from the authorities. The college authorities wants to catch them on run. They are developing a computer system, which will help them catch these miscreants.
+The college is made up N blocks, numbered from 1 to N, and E stairs connecting them. Looking at map of college, they want to determine where to keep the stair blocks. The computer system has to answer queries:
+1. Given two blocks, A and B, and one stair connecting blocks P and Q. The system has to answer whether the miscreants can get from A to B if the given stair is closed and they can't use it.
+2. Given three blocks, A, B and C. Can the miscreants can get from block A to block B, it they can't use or enter block C.
+You have to implement such system.
+Input Format:
+The first line of input contains contains two integers N and E (1 <= N <= 100000 and 1<= E <= 500000), that denote the value of number  of blocks and stairs. 
+Each of the following E lines contain two distinct integers between 1 and N - numbers of two blocks connected by a stair. There will be at most one stair between any pair of blocks. 
+The following Q lines contains queries (1 <= Q <= 300000). Each of the queries contain four or five integers. The first of these integers is the type of query - 1 or 2. If the query is of type 1, then same line contains four more integers: A, B, P and Q. A and B will represent different blocks and P and Q will be an existing stair. 
+If the query is of type 2, then the same line contains three more integers: A, B and C. A, B and C will be distinct integers.
+The test cases will be such that it is initially possible to go from each block to every other block. 
+Constraints:
+Time Limit: 3 seconds
+Output format:
+For each query, output the answers, one per line. The answer to a query can be "yes" or "no" 
+Sample Input 1:
+13 15
+1 2
+2 3
+3 5
+2 4
+4 6
+2 6
+1 4
+1 7
+7 8
+7 9
+7 10
+8 11
+8 12
+9 12
+12 13
+5
+1 5 13 1 2
+1 6 2 1 4
+1 13 6 7 8
+2 13 6 7
+2 13 6 8 
+Sample Output 1:
+yes
+yes
+yes
+no
+yes 
