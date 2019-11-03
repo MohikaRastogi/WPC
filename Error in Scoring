@@ -1,0 +1,36 @@
+Error in Scoring
+Send Feedback
+Kapil was feeling lonely. So, he switched on television and tuned into Sports24 channel. A badminton game was going on, but it was not the usual game of badminton. It was a tweaked version of original game, developed by Chinese. It was named "set of 6".
+Kapil quickly understood the rules and found errors in the stats shown at top right corner of screen. He had an idea. He thought of writing code to check validity of scores.
+He wants your help in writing code. You can refer to the below mentioned rules to check whether the scores are valid.
+Rules:
+1. A badminton game will consist of sets. The game ends when either player has won 2 sets. That player is the winner.
+2. A player wins a set if he/ she has six or more points and at least two more points than the opponent.
+3. Moreover, if the result is 6:6, in either first or second set, then a another set is played to determine the winner.
+4. A match result is valid if a match could have been played by above rules and ended in result.
+Apart from these rules, if one of the players is Lee Chong Wei (denoted by lcw in input), then a result in which he has lost a set cannot be valid. Lee is from another planet and he cannot be defeated.
+Can you write code for checking validity of scores.
+Input Format:
+The first line of input contains the names of the two players separated by a single space. Both names will be strings of at most 20 lowercase letters of the English alphabet. The names will be different.
+The second line contains an integer N (1 ≤ N ≤ 50), how many matches the two players have played.
+Each of the following N lines contains the result of a single match, composed of the results of a number of sets separated by single spaces. Each match result will contain between 1 and 5 sets. A set is given in the format "A:B", where A and B are games won by each player. These numbers will be integers between 0 and 99 (inclusive). 
+Constraints:
+Time Limit: 1 second
+Output Format:
+For each match, in the order they're given in the input, output "yes" if the result is valid, or "no" if it isn't. 
+Sample Input 1:
+anton srikanth
+6
+6:2 6:4
+3:6 7:5 2:6
+6:5 7:4
+7:6 7:6
+6:2 3:6
+6:2 1:6 6:8
+Sample Output 1:
+yes
+yes
+no
+yes
+no
+yes 
