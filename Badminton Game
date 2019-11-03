@@ -1,0 +1,31 @@
+Badminton Game
+Send Feedback
+Vikas and Navdeep are playing a modified badminton game. This badminton game is time bound and is of 48 minutes. Both of them are working hard to win the match. Naman is watching the game and has to answer these two queries:
+ 1. How many points were scored in first half?
+ 2. How many times a player came from a losing situation (has strictly fewer points scored than the other player) to a leading position one (has strictly more points scored than other player)?
+Since, Naman is busy watching the game, he wants your help.
+Input Format:
+The first line of input consists of number of points scored by Vikas in the entire game. Let it be denoted by symbol V (1 <= V <= 3000). Each of the following V lines consists of an integer, the seconds in which Vikas has scored points, ordered from smallest to largest. Each of second lies in the range: [1, 2880]. The following line consists of number of points scored by Navdeep. Let us denote it by symbol N (1 <= N <= 3000). Each of the following N lines consists of an integer, the seconds in which Navdeep has scored points, ordered from smallest to largest. Each of second lies in the range: [1, 2880].
+Constraints:
+Time Limit: 1 second
+Output Format:
+The first line of output contains an integer, which answers first query. The following line of output contains an integer, which answers second query.
+Sample Input 1:
+6
+15
+30
+35
+55
+60
+2065
+7
+20
+25
+40
+45
+50
+2070
+2075
+Sample Output 1:
+10
+5
