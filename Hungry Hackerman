@@ -1,0 +1,24 @@
+Hungry Hackerman
+Send Feedback
+Hackerman is hungry programmer and has stumbled upon a local restaurant. The restaurant offers N meals and has an interesting pricing policy: each meal i has two assigned prices, Ai and Bi. hackerman pays A only for the first ordered meal, while B prices apply for all other meals.
+Hackerman can't decide how many meals to order. In order to make his decision easier, he has asked you to compute, for each k between 1 i N (inclusive), the minimum total price for k ordered meals. Hackerman doesn't care which particular meals he orders or in which order he orders them, however he won't order the same meal twice. Order, order, order.
+Input Format:
+The first line of input contains the positive integer N, the number of different meals offered by the restaurant.
+Each of the following N lines contains two positive integers, Ai and Bi, the prices for meal i as described above.
+Constraints:
+2 ≤ N ≤ 500000
+1 ≤ Ai,Bi ≤ 1000000000
+Output Format:
+Output must consist of N lines, where line k contains the minimum price for ordering exactly k different meals.
+Sample Input:
+3
+10 5
+9 3
+10 5
+Sample Output:
+9
+13
+18
+Explanation:
+k = 1: Hackerman pays A2 = 9 for the starting meal 2.
+k = 2: Hackerman pays A1 = 10 for the starting meal 1, then B2 = 3 for meal 2.
