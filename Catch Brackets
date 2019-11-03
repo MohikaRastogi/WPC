@@ -1,0 +1,34 @@
+
+Catch Brackets
+Send Feedback
+At Coding Ninjas, we love to play games. We all are fond of a game called Catch Brackets.
+Game Description: Let us say that screen is divided into 'row' * 'col' number of pixels. The main character is kept at a pixel on the bottom most row. The position of main character is denoted by character 'M'. The main character can move one pixel left or right or stay still. This means it is not necessary to move the main character.
+It is given that all the other pixels of the game (except the last row) are filled by either one of these elements: '(' (opening bracket), ')' (closing brackets), '.' (empty pixel), '*' (landmines). Except the last row, all the other rows simultaneously move one pixel down and eventually move out of the screen.
+While each row is moving out, the main character want to move and catch brackets. The caught bracket gets added to its array. The objective of the main character is to make longest array of balanced brackets.
+The game becomes over when either main character catches a landmine or all the rows move out of the screen.
+An array or sequence of balanced brackets is defined as follows:
+1. () is a sequence of balanced brackets.
+2. If p is a sequence of balanced brackets, then (p) is also a sequence of balanced brackets.
+3. If p and q are sequences of balanced brackets, then pq is also a sequence of balanced bracket.
+Your task is to find the longest possible array of balanced brackets.
+
+Input format:
+The first line of input contains two space separated integers, that denote the values of 'row' and 'col'. The value of 'row' and 'col' lies in the range: [1, 300]. Each of following 'row' number of lines contains 'col' number of space separated characters. Characters can be '.', '(', ')', '*' or 'M'.
+The test cases would be such that at least one array of balanced brackets is possible to catch.
+
+Constraints:
+Time Limit: 0.5 seconds
+
+Output Format:
+The first line of output contains the length of longest array or sequence of balanced brackets.
+The following line contains the array itself. If there are multiple answers, output the lexicographically smallest one.     
+Sample Input 1:
+5 4
+.)..
+*.((
+.).*
+(.((
+.M..
+Sample Output 1:
+4
+()()
